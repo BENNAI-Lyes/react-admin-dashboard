@@ -1,5 +1,5 @@
 import { Visibility } from "@material-ui/icons";
-import Button from "../button/Button";
+
 import "./newMembers.scss";
 
 export default function NewMembers() {

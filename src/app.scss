@@ -1,7 +1,15 @@
-.coreAppContainer {
-  display: flex;
+.app {
+  .coreAppContainer {
+    display: flex;
+  }
 }
 
-.pages {
-  flex: 9;
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
 }

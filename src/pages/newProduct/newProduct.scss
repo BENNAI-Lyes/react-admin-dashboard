@@ -1,0 +1,41 @@
+.newProduct {
+  flex: 9;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 300px;
+      input,
+      select {
+        padding: 10px;
+      }
+
+      label:first-child {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .icon {
+          cursor: pointer;
+        }
+      }
+
+      .add {
+        padding: 10px 0;
+        background-color: darkblue;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

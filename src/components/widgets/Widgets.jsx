@@ -1,7 +1,7 @@
 import "./widgets.scss";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 
-export function Widgets({}) {
+export function Widgets() {
   return (
     <div className="widgets">
       <div className="widget">

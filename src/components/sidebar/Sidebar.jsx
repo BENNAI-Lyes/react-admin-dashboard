@@ -13,6 +13,7 @@ import {
   Report,
   CardTravel,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -21,10 +22,12 @@ export default function Sidebar() {
         <div className="item">
           <h3 className="title">Dashboard</h3>
           <ul className="list">
-            <li className="active">
-              <Home className="icon" />
-              <span>Home</span>
-            </li>
+            <Link to="/">
+              <li className="active">
+                <Home className="icon" />
+                <span>Home</span>
+              </li>
+            </Link>
             <li>
               <Timeline className="icon" />
               <span>Analytics</span>
@@ -38,14 +41,18 @@ export default function Sidebar() {
         <div className="item">
           <h3 className="title">Quick Menu</h3>
           <ul className="list">
-            <li>
-              <Person className="icon" />
-              <span>Users</span>
-            </li>
-            <li>
-              <Redeem className="icon" />
-              <span>Products</span>
-            </li>
+            <Link to="/users">
+              <li>
+                <Person className="icon" />
+                <span>Users</span>
+              </li>
+            </Link>
+            <Link to="/products">
+              <li>
+                <Redeem className="icon" />
+                <span>Products</span>
+              </li>
+            </Link>
             <li>
               <AttachMoney className="icon" />
               <span>Transactions</span>

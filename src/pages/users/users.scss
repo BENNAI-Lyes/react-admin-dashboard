@@ -1,0 +1,28 @@
+.users {
+  flex: 9;
+  padding: 10px;
+  margin: 20px;
+
+  .userCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .actionCell {
+    .editIcon {
+      color: green;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .deleteIcon {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

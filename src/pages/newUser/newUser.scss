@@ -1,0 +1,72 @@
+.newUser {
+  flex: 9;
+  padding: 20px;
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+
+    .group {
+      width: 400px;
+      margin: 15px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .label {
+        color: gray;
+      }
+      input {
+        padding: 10px;
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid gray;
+
+        &:focus {
+          outline: none;
+        }
+        & [type="radio"] {
+          width: 20px;
+        }
+      }
+      .genderItems {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        input {
+          width: auto;
+          margin-right: 10px;
+        }
+        label {
+          margin-right: 15px;
+        }
+      }
+
+      select {
+        width: 80%;
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .submit {
+      display: inline-block;
+      width: 150px;
+      padding: 10px 0;
+      text-align: center;
+      background-color: darkblue;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+  }
+}
