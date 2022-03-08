@@ -1,0 +1,44 @@
+.sidebar {
+  flex: 3;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+
+    .item {
+      margin-bottom: 8px;
+
+      .title {
+        margin-bottom: 4px;
+        color: #999;
+        font-weight: 500;
+      }
+      .list {
+        padding-left: 10px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 5px;
+          cursor: pointer;
+          padding: 4px;
+          color: #555;
+          width: 80%;
+          border-radius: 10px;
+          .icon {
+            font-size: 20px !important;
+          }
+          &:hover,
+          &.active {
+            background-color: rgb(240, 240, 240);
+          }
+        }
+      }
+    }
+  }
+}

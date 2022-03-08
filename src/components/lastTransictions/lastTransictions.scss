@@ -1,0 +1,46 @@
+.lastTransictions {
+  flex: 0.6;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  border-radius: 15px;
+  color: #333;
+  margin-left: 10px;
+
+  .wrapper {
+    padding: 20px;
+
+    .title {
+      font-size: 19px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .table {
+      border-spacing: 10px;
+      th {
+        text-align: left;
+        font-size: 17px;
+      }
+      tr {
+        .customer {
+          display: flex;
+          align-items: center;
+          .img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+          .name {
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+        .date,
+        .amount {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
